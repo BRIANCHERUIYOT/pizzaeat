@@ -1,31 +1,41 @@
-const Pizza=function(name,size,crust,toppings) {
- this.name = name;
+const Pizza=function(size,crust,toppings) {
  this.size = size;
  this.crust = crust;
  this.toppings = toppings;
 
-let pizzone = new Pizza(name,size,crust,toppings)
-console.log(pizzone);
+//  creating a funtion that will use the above constructor to return their total sum ""
+    Pizza.prototype.Tprice = function(){
+     alert("am called");
+    return this.size + this.crust + this.toppings   
 }
 
-Pizza('Meatpizza', 'medium','suasage','cream');
+}
 
-// $(document).ready(function() {
-//     // let pizza = document.getElementById.value();
-//     // event.preventDefault();
-//     $("#Add").click(function() {
-//     let Ppizza = parseInt($("#size option:selected").val());
-//     let Ptopping = parseInt($("#top option:selected").val());
-//     let Pcrust = parseInt($("#size option:selected").val());
 
-//         alert(Ppizza);
-//         // console.log("i am clicked" + pizza);
-//         alert("I am clicked")
-//     Pizza('Meatpizza', 'medium','suasage','cream');
-        
+// let pizzone = new Pizza(400,500,100);
+// let answer = (pizzone.Tprice())
+// alert(answer)
 
-//     })
-// });
+$(document).ready(function() {
+
+    let total = 0;
+    $("#Add").click(function() {
+    let Ppizza = parseInt($("#size option:selected").val());
+    let Ptopping = parseInt($("#top option:selected").val());
+    let Pcrust = parseInt($("#crust option:selected").val()); 
+
+    
+    // to create a new instance of a pizza we'll use the above created constructor to create a new instance 
+    let new_order = new Pizza(Ppizza, Pcrust, Ptopping);
+    
+    let price = (new_order.Tprice())
+    alert(price)
+    // console.log(price)
+    total += parseInt(price);
+    alert(total)
+
+    })
+});
 
 // const pizza = function() {
 // alert(hello man)
