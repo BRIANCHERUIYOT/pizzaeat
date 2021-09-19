@@ -5,7 +5,6 @@ const Pizza=function(size,crust,toppings) {
 
 //  creating a funtion that will use the above constructor to return their total sum ""
     Pizza.prototype.Tprice = function(){
-     alert("am called");
     return size + crust + toppings   
 }
 
@@ -13,7 +12,7 @@ const Pizza=function(size,crust,toppings) {
 
 
 $(document).ready(function() {
-
+  let total = 0;
     $("#Add").click(function(event) {
       event.preventDefault();
     let Ppizza = parseInt($("#size option:selected").val());
@@ -25,7 +24,7 @@ $(document).ready(function() {
     let new_order = new Pizza(Ppizza, Pcrust, Ptopping);
     
     let price = (new_order.Tprice())
-    alert(price);
+    total+=price
 
     var Tpizza= $("#size option:selected").text();
       var Tcrust= $("#crust option:selected").text();
@@ -37,7 +36,7 @@ $(document).ready(function() {
     })
 
     $("button#final").click(function(event){
-      $("#price:last").text(price);
+      $("#price:last").text(total);
       $("#last").show();
       
       
