@@ -1,27 +1,32 @@
-const sizes=["Small", "Medium","Large"];
-function variety(name , image, information){
-    this.name =name;
-    this .image=image;
-    this.information= information;
+const Pizza=function(name,size,crust,toppings) {
+ this.name = name;
+ this.size = size;
+ this.crust = crust;
+ this.toppings = toppings;
 
-    this.prices={
-        "Large":1000,
-        "Medium":800,
-        "Small":500,
-  }
-}
-function crusts( name,price ){
-    this.name=name;
-    this.price=price;
-}
-function toppings( name,price ){
-    this.name=name;
-    this.price=price;
+let pizzone = new Pizza(name,size,crust,toppings)
+console.log(pizzone);
 }
 
-const pizzalist =[
-    new variety("Veggie Pizza"),
-    new variety(" Meat Pizza"),
-    new variety("Margherita Pizza")
-];
- 
+Pizza('Meatpizza', 'medium','suasage','cream');
+
+// $(document).ready(function() {
+//     // let pizza = document.getElementById.value();
+//     // event.preventDefault();
+//     $("#Add").click(function() {
+//     let Ppizza = parseInt($("#size option:selected").val());
+//     let Ptopping = parseInt($("#top option:selected").val());
+//     let Pcrust = parseInt($("#size option:selected").val());
+
+//         alert(Ppizza);
+//         // console.log("i am clicked" + pizza);
+//         alert("I am clicked")
+//     Pizza('Meatpizza', 'medium','suasage','cream');
+        
+
+//     })
+// });
+
+// const pizza = function() {
+// alert(hello man)
+// }

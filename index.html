@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <!-- Bootstrap CSS -->
-    <link
+    <!-- <link
       href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css"
       rel="stylesheet"/>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
-      rel="stylesheet"/>
+      rel="stylesheet"/> -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 
     <script
@@ -22,10 +23,51 @@
     <!-- <script src="./index.js"></script> -->
   </head>
   <body>
-    
+    <div class="container card mt-5 p-4">
+      <form action="">
 
+        <div class="input-group">
+          <select class="form-select" id="name" >
+            <option selected>Select your pizza flavor..</option>
+            <option value="">Meat pizza</option>
+            <option value="200">Veggie pizza</option> Pizza</option>
+            <option value="3000">Magherati Pizza</option>
+          </select>
+          <label class="input-group-text" for="inputGroupSelect02">Pizza</label>
+        </div>
 
-   
-    <script src="./main.js"></script>
+        <div class="input-group mt-3">
+          <select class="form-select" id="size">
+            <option selected>Select your pizza flavor..</option>
+            <option value="1000">Small-Size</option>
+            <option value="200">Medium-Size</option> Pizza</option>
+            <option value="3000">Large-Size</option>
+          </select>
+          <label class="input-group-text" for="inputGroupSelect02">Pizza Size</label>
+        </div>
+        <div class="input-group mt-3">
+          <select class="form-select" id="top">
+            <option selected>Select your Toppings..</option>
+            <option value="200">One</option>
+            <option value="300">Two</option>
+            <option value="350">Three</option>
+          </select>
+          <label class="input-group-text" for="inputGroupSelect02">Toppings</label>
+
+        </div> <div class="input-group mt-3">
+          <select class="form-select" id="crust">
+            <option selected>Select your Crusts</option>
+            <option value="150">One</option>
+            <option value="50">Two</option>
+            <option value="100">Three</option>
+          </select>
+          <label class="input-group-text" for="inputGroupSelect02">Crust</label>
+        </div>
+           <div class="button mt-3">
+            <button type="submit" class="btn btn-success" id="Add">Success</button>
+           </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
