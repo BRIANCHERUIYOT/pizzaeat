@@ -1,4 +1,28 @@
 body {
-    background-image: url(/student1.jpg);
+    background-color: wheat;
+}
+.landing{
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('pizpic/Margherita .jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+    color:white;
+    text-align: center;
+}
+
+form h3{
+    color: rgb(34, 124, 160);
+    text-align: center;
+    margin-bottom:10px;
+    letter-spacing: .2em;
+
+}
+
+table{
+    background-color:orange;
+}
+
+.check{
     
 }
