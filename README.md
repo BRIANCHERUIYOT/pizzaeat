@@ -1,8 +1,8 @@
 # DELANI STUDIOS
-#### allows peple to , {13/9/2021}
+#### For odering a pizza and adding to cart , {13/9/2021}
 #### By **{BRIAN CHERUIYOT}**
 ## Description
-one can oder a pizza and add to cart and also chheck out.
+one can oder a pizza and add to cart and also check out.
 # Setup/Installation Requirements
 * Get the VS.CODE APPLICATION
 * Download chrome or any browser preferably chrome
