@@ -42,6 +42,6 @@ $(document).ready(function() {
       
           alert("thanks  for your add and you could make some more if you want, this will be delivered in on time")
     
-
+          
   })
 });
