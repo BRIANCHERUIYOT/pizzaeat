@@ -11,6 +11,9 @@ body {
   color: white;
   text-align: center;
 }
+.landing p{
+    margin-top:50%;
+}
 
 form h3 {
   color: rgb(34, 124, 160);

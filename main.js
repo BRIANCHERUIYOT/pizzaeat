@@ -9,6 +9,7 @@ const Pizza=function(size,crust,toppings) {
 }
 
 }
+// alert("Tprice");
 
 
 $(document).ready(function() {
@@ -17,7 +18,8 @@ $(document).ready(function() {
       event.preventDefault();
     let Ppizza = parseInt($("#size option:selected").val());
     let Ptopping = parseInt($("#top option:selected").val());
-    let Pcrust = parseInt($("#crust option:selected").val()); 
+    let Pcrust = parseInt($("#crust option:selected").val());
+   
 
     
     // to create a new instance of a pizza we'll use the above created constructor to create a new instance 
@@ -42,6 +44,6 @@ $(document).ready(function() {
       
           alert("thanks  for your add and you could make some more if you want, this will be delivered in on time")
     
-          
+
   })
 });
